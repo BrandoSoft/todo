@@ -20,9 +20,7 @@ const printTasks = (array) => {
 const removeTask = (e) => {
     e.target.parentNode.remove();
     const index = e.target.parentNode.dataset.key;
-    console.log(index)
     toDoList.splice(index, 1)
-    console.log(toDoList)
     list.textContent = "";
     printTasks(toDoList)
     showCounter();
@@ -45,7 +43,6 @@ const addTask = (e) => {
 const searchTasks = (e) => {
     const searchText = e.target.value.toLowerCase();
     searchToDoList = toDoList.filter(element => element.textContent.toLowerCase().includes(searchText));
-    console.log(searchToDoList)
     list.textContent = "";
     printTasks(searchToDoList);
 }

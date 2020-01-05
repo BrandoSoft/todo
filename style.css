@@ -53,7 +53,6 @@ li {
     height: 80px;
     font-size: 30px;
     padding: 10px 10px;
-
     margin: 10px auto;
     width: 80%;
     text-align: left;
@@ -61,4 +60,58 @@ li {
 
 span {
     font-size: 40px;
+}
+
+@media (max-width: 360px) {
+
+    .wrap {
+        margin: 10px auto;
+        width: 95%;
+        background-color: red;
+        text-align: center;
+        border-radius: 10px;
+        padding: 10px 10px;
+        padding-bottom: 40px;
+    }
+
+    button {
+        width: 50%;
+        height: 40px;
+        /* font-size: 20px; */
+        line-height: 30px;
+    }
+
+    li button {
+        width: 25%;
+        height: 40px;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 10px 10px;
+        margin: 20px auto;
+    }
+
+    input {
+        display: block;
+        height: 30px;
+        font-size: 20px;
+        margin: 10px auto;
+    }
+
+    li {
+        height: 40px;
+        font-size: 10px;
+        padding: 10px 10px;
+        margin: 20px auto;
+        width: 100%;
+        text-align: left;
+
+    }
+
+    li span {
+        display: inline-block;
+        background-color: #fff;
+        width: 50%;
+        height: 30p;
+        padding: 0 20px;
+    }
 }
